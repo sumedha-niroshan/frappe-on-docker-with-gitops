@@ -13,19 +13,12 @@ GitOps is a modern approach to managing infrastructure and applications using ve
 - **Portainer Integration**: Manage containers, images, and volumes with a user-friendly GUI.
 - **Multi-Site Setup**: Host multiple Frappe sites on a single Docker instance.
 
-## 🚀 Prerequisites  
-
-Before you start, ensure you have the following installed and configured:  
-
-1. **Docker**: [Get Docker](https://www.docker.com/get-started)  
-2. **Portainer**: [Install Portainer](https://www.portainer.io/)  
-3. **Git**: [Install Git](https://git-scm.com/)  
-4. **Frappe Bench Docker Image**: Official Frappe Docker image.  
 
 ## 🛠️ Setup Instructions  
 
 ### Step 1: Clone the Repository  
 
 ```bash
-git clone <repository-url>
-cd <repository-directory>
+git clone https://github.com/sumedha-niroshan/frappe-on-docker-with-gitops.git
+cd frappe-on-docker-with-gitops
+```
