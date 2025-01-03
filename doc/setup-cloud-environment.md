@@ -1,16 +1,16 @@
-## Setup cloud envariment
+# Setup cloud envariment
 
 ## Topics
 
 - [Setup cloud envariment](#setup-cloud-envariment)
-- [Topics](#topics)
-  - [Install Prerequisites](#install-prerequisites)
-  - [Setup Docker Swarm](#setup-docker-swarm)
-  - [Setup Traefik](#setup-traefik)
-  - [Setup Portainer](#setup-portainer)
-  - [Setup MariaDB](#setup-mariadb)
-  - [Setup Swarm CRON](#setup-swarm-cron)
-  - [Setup ERPNext](#setup-erpnext)
+  - [Topics](#topics)
+    - [Install Prerequisites](#install-prerequisites)
+    - [Setup Docker Swarm](#setup-docker-swarm)
+    - [Setup Traefik](#setup-traefik)
+    - [Setup Portainer](#setup-portainer)
+    - [Setup MariaDB](#setup-mariadb)
+    - [Setup Swarm CRON](#setup-swarm-cron)
+    - [Setup ERPNext](#setup-erpnext)
 
 ### Install Prerequisites
 
