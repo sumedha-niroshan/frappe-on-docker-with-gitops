@@ -33,3 +33,5 @@ Before we dive into the installation, ensure the following:
 git clone https://github.com/sumedha-niroshan/frappe-on-docker-with-gitops.git
 cd frappe-on-docker-with-gitops
 ```
+
+You can follow the steps in `doc/Setup dev environment.md` and `doc/Setup cloud envariment.md`
