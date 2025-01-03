@@ -2,6 +2,8 @@
 
 This project demonstrates how to set up and manage a Frappe application using GitOps principles on Docker, orchestrated through Portainer. It includes running multiple Frappe sites within a single Docker environment for efficient resource utilization and scalability.
 
+![Project 01 (2)](https://github.com/user-attachments/assets/fe123a26-7c0b-4bf4-8b14-e197022d1745)
+
 ## 📖 Overview  
 
 GitOps is a modern approach to managing infrastructure and applications using version control systems. By combining GitOps, Docker, and Portainer, this project streamlines the deployment and management of Frappe applications, enabling teams to focus on development while maintaining consistency and reliability in production.
@@ -13,19 +15,21 @@ GitOps is a modern approach to managing infrastructure and applications using ve
 - **Portainer Integration**: Manage containers, images, and volumes with a user-friendly GUI.
 - **Multi-Site Setup**: Host multiple Frappe sites on a single Docker instance.
 
-## 🚀 Prerequisites  
 
-Before you start, ensure you have the following installed and configured:  
+## Prerequisites
 
-1. **Docker**: [Get Docker](https://www.docker.com/get-started)  
-2. **Portainer**: [Install Portainer](https://www.portainer.io/)  
-3. **Git**: [Install Git](https://git-scm.com/)  
-4. **Frappe Bench Docker Image**: Official Frappe Docker image.  
+Before we dive into the installation, ensure the following:
+
+1. Portainer Installed: Portainer is a container management platform that simplifies the use of Docker.
+2. Docker & Docker Compose: Docker should be installed on your system. Installation.
+3. Basic Knowledge of Docker and Portainer: While this guide simplifies the process, some basic knowledge will be helpful.
+
 
 ## 🛠️ Setup Instructions  
 
 ### Step 1: Clone the Repository  
 
 ```bash
-git clone <repository-url>
-cd <repository-directory>
+git clone https://github.com/sumedha-niroshan/frappe-on-docker-with-gitops.git
+cd frappe-on-docker-with-gitops
+```
