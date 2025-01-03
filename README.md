@@ -14,6 +14,15 @@ GitOps is a modern approach to managing infrastructure and applications using ve
 - **Multi-Site Setup**: Host multiple Frappe sites on a single Docker instance.
 
 
+## Prerequisites
+
+Before we dive into the installation, ensure the following:
+
+1. Portainer Installed: Portainer is a container management platform that simplifies the use of Docker. If you haven’t installed Portainer, you can find instructions [here]
+2. Docker & Docker Compose: Docker should be installed on your system. If not, follow the Docker installation guide for your operating system: [Docker Installation]
+3. Basic Knowledge of Docker and Portainer: While this guide simplifies the process, some basic knowledge will be helpful.
+
+
 ## 🛠️ Setup Instructions  
 
 ### Step 1: Clone the Repository  
