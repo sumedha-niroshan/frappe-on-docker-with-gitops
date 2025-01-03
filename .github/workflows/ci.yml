@@ -50,12 +50,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      ### Comment start - when not using docker build actions
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
-
+      ### Comment end - when not using docker build actions
 
       - name: Source Build Env
         id: source-build-env
@@ -72,7 +73,21 @@ jobs:
           username: ${{ inputs.registry-user || github.actor }}
           password: ${{ secrets.REGISTRY_PASSWORD || secrets.GITHUB_TOKEN }}
 
-
+      ### Using Kaniko (https://github.com/GoogleContainerTools/kaniko)
+      # - uses: int128/kaniko-action@v1
+      #   with:
+      #     push: true
+      #     cache: true
+      #     kaniko-args: |
+      #       --build-arg=FRAPPE_PATH=${{ inputs.frappe-repo || env.FRAPPE_REPO }}
+      #       --build-arg=FRAPPE_BRANCH=${{ inputs.frappe-version || env.FRAPPE_VERSION }}
+      #       --build-arg=PYTHON_VERSION=${{ inputs.py-version || env.PY_VERSION }}
+      #       --build-arg=NODE_VERSION=${{ inputs.nodejs-version || env.NODEJS_VERSION }}
+      #       --build-arg=APPS_JSON_BASE64=${{ inputs.apps-json-base64 || env.APPS_JSON_BASE64 }}
+      #       --context=${{ inputs.context || env.CONTEXT }}
+      #       --destination=ghcr.io/${{ github.repository }}/${{ inputs.image || env.IMAGE }}:${{ inputs.version || env.VERSION }}
+      #       --destination=ghcr.io/${{ github.repository }}/${{ inputs.image || env.IMAGE }}:latest
+      #     file: ${{ inputs.dockerfile || env.DOCKERFILE }}
 
       ### Using docker build
       - uses: actions/checkout@v4
